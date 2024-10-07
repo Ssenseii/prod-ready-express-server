@@ -7,6 +7,11 @@ router.get("/", (req, res) => {
 	res.send("Router Active!");
 });
 
+router.get('/csrf-token', (req, res) => {
+    res.json({ token: req.csrfToken() });
+});
+
+
 router.post("/upload", upload.single("file"), (req, res) => {
 	res.send("File uploaded successfully");
 });

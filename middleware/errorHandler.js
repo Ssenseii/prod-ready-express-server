@@ -1,3 +1,4 @@
+const { red, yellow, blue, green, gray, bgRed } = require("colorette");
 const logger = require("../config/logging");
 
 const errorHandler = (err, req, res, next) => {
@@ -32,6 +33,5 @@ const errorHandler = (err, req, res, next) => {
 		});
 	}
 };
-
 
 module.exports = errorHandler;

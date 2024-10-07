@@ -25,6 +25,7 @@ app.use(morgan("combined"));
 app.use(compression());
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(timeout("20s"));
 app.use(i18n.init);

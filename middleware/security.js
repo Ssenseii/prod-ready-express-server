@@ -7,5 +7,5 @@ module.exports = (app) => {
 	app.use(helmet());
 	app.use(xss());
 	app.use(hpp());
-	app.use(csurf());
+	app.use(csurf({ cookie: true }));
 };
