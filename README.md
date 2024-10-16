@@ -12,3 +12,4 @@ The *Express Server Starter Kit* is a boilerplate project that provides a fully-
 - *Internationalization (i18n): Support for multiple locales. 
 - **Email Service*: Pre-configured email transport with nodemailer for transactional emails. 
 
+ugh broke my foot i need to relax
